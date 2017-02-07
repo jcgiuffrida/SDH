@@ -1,0 +1,269 @@
+body {
+  font-size: 12px;
+  font-family: Arial;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#container {
+  margin: 0 auto;
+  text-align: left;
+}
+
+#chart {
+  position: relative;
+}
+
+/*
+.pageheader {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #555;
+}
+*/
+svg {
+  font: 10px sans-serif;
+}
+
+div, form {
+  margin: 0;
+  padding: 0;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+text {
+  font: 10px sans-serif;
+}
+
+td {
+  border-top: none;
+  border-bottom: none;
+  margin: 0;
+  padding: 0;
+}
+
+tr {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+#controls {
+  height: 530px;
+  overflow: scroll;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  padding-right: 3px;
+  color: #ccc;
+  font-weight: bold;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: black;
+}
+
+a.selected {
+  color: black;
+}
+
+#error {
+  font-size: 10px;
+  color: darkRed;
+}
+
+.label {
+  font-size: 10px;
+}
+.ca {
+  fill-opacity: 0.7;
+  stroke: #555;
+  stroke-opacity: 0.7;
+}
+.ca:hover {
+  fill-opacity: 1;
+  stroke-opacity: 1;
+  filter: url(#glow);
+}
+
+.ca.highlighted {
+  fill-opacity: 1;
+  stroke-opacity: 1;
+  filter:url(#glow);
+}
+
+.tip {
+  position: absolute;
+  pointer-events: none;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0,0,0,.2);
+  border: 1px solid rgba(0,0,0,.3);
+  top: -100px;
+  left: -100px;
+  padding: 2px 5px 5px 0;
+}
+
+.tip .row {
+  width: 100%;
+  padding: 0;
+  margin: 5px 0 0 5px;
+}
+
+.tip .ca {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.tip .value {
+  font-weight: bold;
+}
+
+.tip .units {
+  color: #888;
+}
+
+/* trendline */
+.line {
+    stroke: blue;
+    fill:none;
+    stroke-width: 3;
+  }
+
+/* bootstrap corrections */
+.btn-group-sm>.btn, .btn-sm {
+  padding: 2px 7px;
+  line-height: 1.2;
+  border-radius: 5px;
+}
+
+
+#controls {
+  width: 342px;
+  border: 1px solid #3a87ad;
+  border-radius: 10px;
+}
+
+#controls .small-instructions {
+  padding: 20px 15px 0 15px;
+}
+
+.panel {
+  width: 320px;
+  margin: 10px;
+}
+
+.instructions .panel {
+  width: auto;
+  font-size: 14px;
+}
+
+.instructions img {
+  padding-left: 10px;
+}
+
+.panel-info {
+  border-color: #3a87ad;
+}
+
+.panel-info>.panel-heading {
+  background-color: #3a87ad;
+  border-color: #3a87ad;
+}
+
+.panel-title a {
+  display: block;
+  padding: 10px 15px;
+  margin: -10px -15px;
+}
+
+.panel-title a:hover, .panel-title a:active,
+.panel-title a:focus {
+  color: #bbb;
+}
+
+#controls td:first-child {
+  padding-right: 10px;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+#controls td a {
+  padding: 2px;
+}
+
+.legend tr {
+  cursor: pointer;
+  border-bottom: 3px solid white;
+}
+
+.legend td {
+  padding: 0 9px 0 9px;
+}
+
+.legend tr:hover{
+  color:black;
+}
+
+/* hover over legend makes squares darker */
+.legend td:first-child {
+  opacity: 0.7;
+}
+
+.legend tr:hover td:first-child {
+  opacity: 1;
+}
+
+.legend tr.selected td:first-child {
+  opacity: 1;
+}
+
+
+.legend tr.selected {
+  font-weight: bold;
+  color:black;
+}
+
+.statistics td {
+  padding: 2px 0;
+  width: 120px;
+  text-align: center;
+}
+
+.statistics td:first-child {
+  width: 75px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.statistics tr {
+  margin: 0;
+  padding: 0;
+}
+
+.statistics {
+  margin-bottom: 30px;
+}
+
+#collapseExamples .list-group-item-text {
+  font-weight: normal;
+}
